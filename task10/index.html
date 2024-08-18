@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sortable Table</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">Name</th>
+          <th onclick="sortTable(1)">Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>Mike Johnson</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Emily Davis</td>
+          <td>35</td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
