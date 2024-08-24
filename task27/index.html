@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adăugare Element în Listă</title>
+  </head>
+  <body>
+    <h2>Adaugă un element în listă</h2>
+
+    <!-- Câmp de input și butonul de adăugare -->
+    <input type="text" id="itemInput" placeholder="Introdu elementul" />
+    <button id="addItemButton">Adaugă</button>
+
+    <!-- Lista în care se vor adăuga elementele -->
+    <ul id="itemList"></ul>
+
+    <script>
+      // Selectăm elementele din DOM
+      const addItemButton = document.getElementById("addItemButton");
+      const itemInput = document.getElementById("itemInput");
+      const itemList = document.getElementById("itemList");
+
+      // Adăugăm un event listener pe buton
+      addItemButton.addEventListener("click", function () {
+        // Preluăm valoarea din input
+        const newItemText = itemInput.value.trim();
+
+        // Verificăm dacă inputul nu este gol
+        if (newItemText !== "") {
+          // Cream un nou element <li>
+          const newItem = document.createElement("li");
+
+          // Setăm textul noului element <li>
+          newItem.textContent = newItemText;
+
+          // Adăugăm elementul în listă
+          itemList.appendChild(newItem);
+
+          // Resetăm câmpul de input
+          itemInput.value = "";
+        }
+      });
+
+      // Adăugăm event listener pentru tasta Enter
+      itemInput.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+          addItemButton.click();
+        }
+      });
+    </script>
+  </body>
+</html>

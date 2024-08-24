@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Stilizare pentru titlu */
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+/* Stilizare pentru containerul general */
+#container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stilizare pentru meniul derulant */
+#genre-filter {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Stilizare pentru lista de cărți */
+#book-list div {
+  background-color: #e9ecef;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Stilizare pentru fiecare titlu de carte */
+#book-list strong {
+  color: #007bff;
+}
